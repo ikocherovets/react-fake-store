@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Loader } from '../loader';
-import { Product } from '../types/Product';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Loader } from "../loader";
+import { Product } from "../types/Product";
 
-import { sortProducts } from '../services/sortProducts';
-import { fetchProducts } from '../services/fetchProducts';
+import { sortProducts } from "../services/sortProducts";
+import { fetchProducts } from "../services/fetchProducts";
 
 export const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [originalProducts, setOriginalProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
-  const [sortOption, setSortOption] = useState('default');
+  const [sortOption, setSortOption] = useState("default");
 
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const data = await fetchProducts(); 
+        const data = await fetchProducts();
         setProducts(data);
         setOriginalProducts(data);
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error("Error fetching products:", error);
       } finally {
         setLoading(false);
       }
@@ -46,8 +46,8 @@ export const Products: React.FC = () => {
           <label className="label">Sort by:</label>
           <div className="control">
             <div className="select is-primary">
-              <select 
-                value={sortOption} 
+              <select
+                value={sortOption}
                 onChange={(event) => handleSort(event.target.value)}
               >
                 <option value="default">Default</option>
@@ -74,7 +74,10 @@ export const Products: React.FC = () => {
                     </div>
                   </div>
                   <div className="content">
-                    <Link to={`/products/${product.id}`} className="button is-link is-fullwidth">
+                    <Link
+                      to={`/products/${product.id}`}
+                      className="button is-link is-fullwidth"
+                    >
                       View Details
                     </Link>
                   </div>
