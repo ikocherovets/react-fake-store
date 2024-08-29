@@ -6,6 +6,10 @@ A modern, fully responsive fake e-commerce store built with React, Vite, TypeScr
 
 React Fake Store is a mock e-commerce website designed to showcase the use of modern frontend technologies. It features product listings, sorting, and detailed product views. This project is ideal for learning purposes or as a starter template for more complex projects.
 
+### 🌐 Demo
+
+Check out the live demo [here](https://ikocherovets.github.io/react-fake-store/).
+
 ## 🛠️ Features
 
 - Dynamic product listings with sorting options
