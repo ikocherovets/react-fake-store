@@ -44,7 +44,7 @@ To get a local copy up follow these simple steps:
 3. **Install dependencies (you need to have at least 18 version of Node.js):**
 
    ```bash
-   node -v //must be at least 18
+   node -v
    npm install
    ```
    
