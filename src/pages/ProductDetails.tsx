@@ -25,7 +25,7 @@ export const ProductDetails: React.FC = () => {
   }, [id]);
 
   useEffect(() => {
-    localStorage.setItem('lastVisitedProduct', id as string);
+    localStorage.setItem("lastVisitedProduct", id as string);
   }, [id]);
 
   if (loading) return <Loader />;
