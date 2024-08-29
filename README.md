@@ -27,7 +27,7 @@ Check out the live demo [here](https://ikocherovets.github.io/react-fake-store/)
 
 ## 📦 Installation
 
-To get a local copy up and running, follow these simple steps:
+To get a local copy up follow these simple steps:
 
 1. **Clone the repository:**
 
